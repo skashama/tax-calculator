@@ -16,15 +16,15 @@ const serviceTaxCalculator = async (income: any, year: any) => {
         var amountTaxable, taxPayable, total = 0;
         for(let i=0; i<res.length; i++){
             if(res[i].max){
-                amountTaxable = res[i].max - res[i].min
-                taxPayable = amountTaxable * res[i].rate;
+                amountTaxable = res[i].max - res[i].min;
             } else {
                amountTaxable = income - res[i].min;
-               taxPayable = amountTaxable * res[i].rate;
             }
+            taxPayable = amountTaxable * res[i].rate;
             total += taxPayable;
-           // console.log(amountTaxable);
+            console.log(taxPayable);
         }
+        console.log(total);
 
     }catch(exception){
         console.log("exception", exception)
@@ -32,7 +32,6 @@ const serviceTaxCalculator = async (income: any, year: any) => {
     
     return (
         <div>
-
         </div>
     )
 

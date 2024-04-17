@@ -14,12 +14,12 @@ input[type=text], input[type=number], input[type=email], input[type=password]  {
     width: 65%;  
 }
   
-input[type=submit] {  
-    background:#ccc; 
+button[type=submit] {  
+    background:#1f5011; 
     border:0 none;
     border-radius: 5px;
     cursor:pointer;
-    padding:5px 15px; 
+    padding:8px 19px; 
     -webkit-border-radius: 5px;
 }
   
